@@ -16,6 +16,8 @@ public enum ErrorCode {
     REQUEST_METHOD_VALIDATION_EXCEPTION(HttpStatus.BAD_REQUEST, "요청 메소드가 잘못됐습니다."),
     MAX_UPLOAD_SIZE_EXCEED_EXCEPTION(HttpStatus.PAYLOAD_TOO_LARGE, "파일 용량 초과"),
 
+    INVALID_FILE_EXCEPTION(HttpStatus.BAD_REQUEST,"유효하지 않은 파일입니다"),
+
     /**
      * 404 NOT FOUND
      * */
@@ -25,6 +27,7 @@ public enum ErrorCode {
     NOT_FOUND_IMAGE_EXCEPTION(HttpStatus.NOT_FOUND, "존재하지 않는 이미지입니다."),
     NOT_FOUND_MISSION_EXCEPTION(HttpStatus.NOT_FOUND, "존재하지 않는 날짜의 미션입니다."),
     NOT_FOUND_FURNITURE_EXCEPTION(HttpStatus.NOT_FOUND, "존재하지 않는 가구입니다."),
+
 
     /**
      * 401 UNAUTHORIZED
